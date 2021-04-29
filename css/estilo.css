@@ -1,0 +1,113 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Architects Daughter', cursive;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+header div h1 {
+    color: white;
+}
+
+nav ul {
+    text-align: center;
+}
+
+body{
+    font-family: 'New Tegomin', serif;
+    margin: 0;
+}
+
+header{
+    background-color:black;
+    padding: 10px;
+}
+footer{
+    clear: both;
+
+}
+footer p {
+    text-align: center;
+}
+
+footer iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+/* regras para colunas e aparencia do cabeçalho e menu  */
+.logo{
+    float: left;
+    width: 40%;
+}
+header nav{
+    float: right;
+    width: 60%;
+}
+header{
+    height: 70px;
+}
+
+/* menu principal  edições de menu e etc! */
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li , header nav ul li a{
+    display: inline-block;
+}
+header nav ul li{
+    margin: 0 10px 0 0;
+}
+/* mudar cor do link no menu! */
+header nav ul li a{ 
+    background-color:black;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+/* passar o mouse em cima e mudar o efeito */
+header nav ul li a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: white;
+    transition: .5s ease-out;
+}
+
+    header nav ul li a:hover::after{
+        width: 100%;
+}
+/* mudar a fonte do menu  */
+header nav ul li a{
+    font-family:'Sriracha', cursive;
+}
+.conteudo{
+    /* limpa a flutuação existente nos elementos do heater  */
+    clear: both;
+    padding: 20px;
+}
+figure img{
+    height: 650px;
+}
+
+
+
+
+/* Modifica o comportamento das colunas e menu quando acessado no celular */
+@media screen and (max-width: 576px) { 
+    .coluna1, .coluna2{
+        float: none;
+        width: 100%;
+    }
+}
+.coluna2{
+    padding-right: 20px;
+}
+
+.logo, header nav{
+    float: none;
+}
+header{
+    height: auto;
+}
+
